@@ -1,6 +1,6 @@
 {
   "name": "promise-status-async",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Promise status management tool",
   "main": "index.js",
   "scripts": {
