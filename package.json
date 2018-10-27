@@ -1,0 +1,34 @@
+{
+  "name": "promise-status-async",
+  "version": "0.0.0",
+  "description": "Promise status management tool",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "DEBUG='' mocha --require test/context 'test/**/*.test.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kudla/promise-status-async.git"
+  },
+  "keywords": [
+    "promise",
+    "status",
+    "async"
+  ],
+  "author": "Artem Kudla <kudla.artem@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kudla/promise-status-async/issues"
+  },
+  "homepage": "https://github.com/kudla/promise-status-async#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "debug": "^4.1.0",
+    "eslint": "^5.8.0",
+    "eslint-plugin-chai-expect": "^2.0.1",
+    "mocha": "^5.2.0",
+    "sinon": "^7.1.0"
+  }
+}

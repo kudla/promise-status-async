@@ -1,0 +1,25 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "rules": {
+    "class-methods-use-this": "off",
+    "comma-dangle": ["error", "never"],
+    "eqeqeq": ["error", "smart"],
+    "func-style": ["error", "declaration", {"allowArrowFunctions": true}],
+    "indent": ["error", 4],
+    "max-len": ["error", 120],
+    "no-param-reassign": ["error", {"props": true, "ignorePropertyModificationsFor": ["ctx", "acc"]}],
+    "object-curly-spacing": ["error", "never"],
+    "space-before-function-paren": ["error", {
+      "named": "never",
+      "asyncArrow": "always"
+    }],
+    "object-curly-newline": "off",
+    "function-paren-newline": "off",
+    "prefer-promise-reject-errors": "off"
+  },
+  "env": {
+    "node": true
+  }
+}
