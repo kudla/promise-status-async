@@ -10,24 +10,22 @@ describe('lib/promiseStatus', () => {
         expect(promiseStatus).to.be.instanceof(Function);
     });
 
-    it('should resovle pending status', async () => {
-        const result = await promiseStatus(new Promise(() => {}));
-        expect(result).to.deep.equal({status: PROMISE_PENDING});
+    it('should resovle pending state', async () => {
+        const status = await promiseStatus(new Promise(() => {}));
+        expect(status).to.equal(PROMISE_PENDING);
     });
 
-    it('should resovle resolved status', async () => {
+    it('should resovle resolved state', async () => {
         const value = {some: 'value'};
-        const result = await promiseStatus(Promise.resolve(value));
+        const status = await promiseStatus(Promise.resolve(value));
 
-        expect(result, 'result structure').to.deep.equal({status: PROMISE_RESOLVED, value});
-        expect(result.value, 'resolved value').to.equal(value);
+        expect(status).to.equal(PROMISE_RESOLVED);
     });
 
-    it('should resovle rejected status', async () => {
+    it('should resovle rejected state', async () => {
         const reason = {some: 'value'};
-        const result = await promiseStatus(Promise.reject(reason));
+        const status = await promiseStatus(Promise.reject(reason));
 
-        expect(result, 'result structure').to.deep.equal({status: PROMISE_REJECTED, reason});
-        expect(result.reason, 'rejection reason').to.equal(reason);
+        expect(status).to.equal(PROMISE_REJECTED);
     });
 });
