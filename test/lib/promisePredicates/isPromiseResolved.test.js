@@ -1,8 +1,8 @@
 const {
     isPromiseResolved
-} = require('../../../lib/predicates');
+} = require('../../../lib/promisePredicates');
 
-describe('lib/predicates/isPromiseResolved', () => {
+describe('lib/promisePredicates/isPromiseResolved', () => {
     it('should be a function', () => {
         expect(isPromiseResolved).to.be.instanceof(Function);
     });

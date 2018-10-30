@@ -1,8 +1,8 @@
 const {
     isPromiseNotRejected
-} = require('../../../lib/predicates');
+} = require('../../../lib/promisePredicates');
 
-describe('lib/predicates/isPromiseNotRejected', () => {
+describe('lib/promisePredicates/isPromiseNotRejected', () => {
     it('should be a function', () => {
         expect(isPromiseNotRejected).to.be.instanceof(Function);
     });

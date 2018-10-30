@@ -1,8 +1,8 @@
 const {
     isPromisePending
-} = require('../../../lib/predicates');
+} = require('../../../lib/promisePredicates');
 
-describe('lib/predicates/isPromisePending', () => {
+describe('lib/promisePredicates/isPromisePending', () => {
     it('should be a function', () => {
         expect(isPromisePending).to.be.instanceof(Function);
     });
