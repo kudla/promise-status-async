@@ -6,6 +6,7 @@
     "class-methods-use-this": "off",
     "comma-dangle": ["error", "never"],
     "eqeqeq": ["error", "smart"],
+    "eol-last": ["error", "always"],
     "func-style": ["error", "declaration", {"allowArrowFunctions": true}],
     "indent": ["error", 4],
     "max-len": ["error", 120],
