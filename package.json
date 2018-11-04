@@ -15,7 +15,9 @@
     "promise",
     "status",
     "async",
-    "tool"
+    "tool",
+    "es6",
+    "es2015"
   ],
   "author": "Artem Kudla <kudla.artem@gmail.com>",
   "license": "MIT",
