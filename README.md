@@ -1,4 +1,5 @@
 # promise-status-async
+Promise status management tool
 
 ## Install
 ```bash
