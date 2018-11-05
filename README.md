@@ -1,6 +1,8 @@
 # promise-status-async
 Promise status management tool
 
+<img src="https://goo.gl/KAS55T" alt="promise logo" width="70">
+
 ## Install
 ```bash
 npm install promise-status-async
