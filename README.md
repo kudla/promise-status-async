@@ -23,7 +23,7 @@ const pendingPromise = new Promise(() => {});
 const resolvedPromise = Promise.resolve('some value');
 const rejectedPromise = Promise.reject('some reason');
 
-async function usageExample () {
+(async function usageExample () {
     console.log(await promiseStatus(pendingPromise));
     // pending
 
@@ -41,7 +41,7 @@ async function usageExample () {
 
     console.log(await isPromiseNotRejected(resolvedPromise));
     // true
-}
+})();
 ```
 
 ## API
