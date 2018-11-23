@@ -8,6 +8,9 @@ Promise status management tool
 npm install promise-status-async
 ```
 
+## API
+Follow [promise-status-sync API](API.md) for more details.
+
 ## Usage example
 ```js
 const {
@@ -43,6 +46,3 @@ const rejectedPromise = Promise.reject('some reason');
     // true
 })();
 ```
-
-## API
-Follow [promise-status-sync API](API.md) for more details.
