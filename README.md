@@ -1,7 +1,8 @@
 # promise-status-async
 Promise status management tool
 
-<img src="https://goo.gl/KAS55T" alt="promise logo" width="70">
+<img src="promise-status.svg" alt="promise status logo" width="70">
+<img src="https://goo.gl/PkiXwP" alt=" " width="0" height="0">
 
 ## Install
 ```bash
