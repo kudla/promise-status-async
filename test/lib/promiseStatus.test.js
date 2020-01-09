@@ -3,7 +3,7 @@ const {
     PROMISE_PENDING,
     PROMISE_RESOLVED,
     PROMISE_REJECTED
-} = require('../../lib/PromiseStatuses');
+} = require('../../lib/promiseStatuses');
 
 describe('lib/promiseStatus', () => {
     it('should be a function', () => {
