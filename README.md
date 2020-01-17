@@ -10,7 +10,7 @@ npm install promise-status-async
 ```
 
 ## API
-Follow [promise-status-sync API](API.md) for more details.
+Follow [promise-status-async API](API.md) for more details.
 
 ## Usage example
 ```js
