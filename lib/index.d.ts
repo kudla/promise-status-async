@@ -7,40 +7,6 @@ import {
 
 export type PromisePredicate = (Promise) => Promise<boolean>
 
-// export const isPromisePending: PromisePredicate
-// export const isPromisePending: PromisePredicate
-
-// const {
-//     PromisePredicates,
-//     isPromisePending,
-//     isPromiseResolved,
-//     isPromiseRejected,
-//     isPromiseNotPending,
-//     isPromiseNotResolved,
-//     isPromiseNotRejected
-// } = require('./promisePredicates');
-
-// module.exports = {
-//     promiseState,
-//     promiseStatus,
-
-//     PromiseStatuses,
-//     PROMISE_PENDING,
-//     PROMISE_RESOLVED,
-//     PROMISE_REJECTED,
-
-//     PromisePredicates,
-//     isPromisePending,
-//     isPromiseResolved,
-//     isPromiseRejected,
-//     isPromiseNotPending,
-//     isPromiseNotResolved,
-//     isPromiseNotRejected
-// };
-
-// import { BrotliOptions, InputType, CompressCallback } from 'zlib'
-// import { stringify as JSONBstringify, parse as JSONBparse } from 'json-buffer'
-
 export enum PromiseStatus {
     PROMISE_PENDING,
     PROMISE_RESOLVED,
@@ -95,37 +61,3 @@ declare module 'promise-status-async' {
     const promiseStatus: promiseStatus
 
 }
-// type PromiseState<T> = {
-
-// }
-// type promiseState<T> = (Promise<T>) => Promise<>
-
-// type Serialize<T> = (source: InputType) => T
-// type Deserialize<T> = (source: CompressResult) => T
-
-// declare function createCompress<
-//   SerializeResult = ReturnType<typeof JSONBstringify>,
-//   DeserializeResult = ReturnType<typeof JSONBparse>
-// >(
-//   options?: {
-//     enable?: boolean,
-//     serialize?: Serialize<SerializeResult>,
-//     deserialize?: Deserialize<DeserializeResult>,
-//     iltorb?: any,
-//     compressOptions?: BrotliOptions,
-//     decompressOptions?: BrotliOptions
-//   }
-// ): {
-//   serialize: Serialize<SerializeResult>,
-//   deserialize: Deserialize<DeserializeResult>,
-//   compress: (data: InputType, optioins?: BrotliOptions) => CompressResult
-//   decompress: (data: InputType, optioins?: BrotliOptions) => DeserializeResult
-// }
-
-// declare namespace createCompress {
-//   const stringify: typeof JSONBstringify
-//   const parse: typeof JSONBparse
-// }
-
-// export default createCompress
-
