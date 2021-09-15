@@ -14,14 +14,14 @@ Follow [promise-status-async API](API.md) for more details.
 
 ## Usage example
 ```js
-const {
+import {
     PromiseStatuses,
     PROMISE_RESOLVED,
     promiseStatus,
     promiseState,
     isPromiseResolved,
     isPromiseNotRejected
-} = require('promise-status-async');
+} from 'promise-status-async';
 
 const pendingPromise = new Promise(() => {});
 const resolvedPromise = Promise.resolve('some value');
