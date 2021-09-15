@@ -3,6 +3,7 @@
   "version": "1.2.0",
   "description": "Promise status management tool",
   "main": "lib",
+  "types": "lib/index.d.ts",
   "scripts": {
     "lint": "eslint .",
     "test": "DEBUG='' mocha --require test/context 'test/**/*.test.js'"
