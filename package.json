@@ -33,7 +33,7 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-chai-expect": "^2.1.0",
     "eslint-plugin-import": "^2.19.1",
-    "mocha": "^6.2.2",
+    "mocha": "^9.1.1",
     "sinon": "^7.5.0"
   },
   "runkitExampleFilename": "usageExample.js"
