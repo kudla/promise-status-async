@@ -6,7 +6,11 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "lint": "eslint .",
-    "test": "DEBUG='' mocha --require test/context 'test/**/*.test.js'"
+    "test": "DEBUG='' mocha --require test/context 'test/**/*.test.js'",
+    "check-master": "test \"`git rev-parse --abbrev-ref HEAD`\" == 'master' ",
+    "check-release-tag": "git describe --exact-match --tags $(git log -n1 --pretty='%h') | grep -E 'v\\d+\\.\\d+\\.\\d+'",
+    "release": "RELEASE_TYPE=${RELEASE_TYPE:-patch} && npm run check-master && npm version $RELEASE_TYPE",
+    "prepublish": "npm run check-master && npm run check-release-tag"
   },
   "repository": {
     "type": "git",
