@@ -22,7 +22,9 @@
     "async",
     "tool",
     "es6",
-    "es2015"
+    "es2015",
+    "ts",
+    "typescript"
   ],
   "author": "Artem Kudla <kudla.artem@gmail.com>",
   "license": "MIT",
